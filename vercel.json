@@ -5,11 +5,5 @@
     "devCommand": "vite",
     "buildCommand": "vite build",
     "installCommand": "pnpm install",
-    "outputDirectory": "build",
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/server"
-        }
-    ]
+    "outputDirectory": "build"
 }

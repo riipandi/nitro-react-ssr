@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "framework": null,
+    "devCommand": "vite",
+    "buildCommand": "vite build",
+    "installCommand": "pnpm install",
+    "outputDirectory": "build"
+}

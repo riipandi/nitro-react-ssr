@@ -78,3 +78,4 @@ slim.report.json
 terraform.tfstate*
 terraform.tfvars*
 !terraform.tfvars.example
+.vercel

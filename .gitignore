@@ -28,6 +28,7 @@ node_modules/
 _data/
 build/
 dist/
+tmp/
 .data
 .cache
 .nitro

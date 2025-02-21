@@ -15,7 +15,7 @@ export default defineConfig({
         prerender: { routes: ['/'] },
       },
       {
-        preset: 'node-server',
+        preset: 'vercel-edge',
         compatibilityDate: '2025-02-21',
         publicAssets: [{ dir: resolve('public') }],
         buildDir: resolve('.output/.nitro'),

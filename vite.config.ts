@@ -15,12 +15,14 @@ export default defineConfig({
         prerender: { routes: ['/'] },
       },
       {
-        minify: isProduction,
+        preset: 'vercel-edge',
+        compatibilityDate: '2025-02-21',
         publicAssets: [{ dir: resolve('public') }],
         output: {
           dir: resolve('.output'),
           publicDir: resolve('.output/public'),
         },
+        minify: isProduction,
       }
     ),
   ],

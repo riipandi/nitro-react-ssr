@@ -11,21 +11,23 @@ export default defineConfig({
       {
         ssr: true,
         entryServer: './src/main.server.tsx',
-        ssrBuildDir: resolve('dist/server'),
+        ssrBuildDir: resolve('.output/server'),
         prerender: { routes: ['/'] },
       },
       {
-        preset: 'vercel-edge',
+        preset: 'node-server',
         compatibilityDate: '2025-02-21',
         publicAssets: [{ dir: resolve('public') }],
+        buildDir: resolve('.output/.nitro'),
         output: {
-          dir: resolve('.output'),
-          publicDir: resolve('.output/public'),
+          dir: resolve('build'),
+          publicDir: resolve('build/public'),
+          serverDir: resolve('build/server'),
         },
         minify: isProduction,
       }
     ),
   ],
   server: { port: 3000, host: false, strictPort: true },
-  build: { outDir: resolve('dist/client') },
+  build: { outDir: resolve('.output/client') },
 })
